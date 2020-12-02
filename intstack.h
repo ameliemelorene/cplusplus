@@ -38,7 +38,7 @@ public:
         return hauteur==0;
     }
     void delete_stack(){
-        top=0
+        delete [] tab;
     }
 private:
     int top;
