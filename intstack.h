@@ -2,12 +2,22 @@
 class IntStack{
 public:
     IntStack (int tutu) : hauteur(tutu), top(0){//on initialise top et hauteur
-        tab = new int [hauteur];
+        if hauteur<=0{
+            std::cout <<'taille nulle';
+            throw(0)
+        }
+        else {
+            tab = new int [hauteur];}
     }
     void push (int e) {
+        
         if (not rempli()) {
             tab[top]= e;
             top = top+1;
+        }
+        else {
+            std::cout<<'pile pleine';
+            throw(1)
         }
     }
     bool rempli(){
@@ -18,6 +28,11 @@ public:
             top=top-1;
             return tab[top+1];
         }
+        else{
+            std::cout<<'pile déjà vide';
+            throw(2)
+        }
+    
     }
     bool vide(){
         return hauteur==0;
