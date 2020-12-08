@@ -23,19 +23,22 @@ void test1(){//test du cas normal
 }
 
 void test2(){//test du cas d'erreur pile de hauteur négative ou nulle
-    IntStack Pile(-1);
+    IntStack Pile(-1);//taille nulle
+//terminate called after throwing an instance of 'int'
 }
 
 void test3(){//test du cas d'erreur pile pleine et push
     IntStack pile(2);
     pile.push(1);
     pile.push(2);
-    pile.push(3);
+    pile.push(3);//pile pleine
+//terminate called after throwing an instance of 'int'
 }
 
 void test4(){//test du cas d'erreur pile vide et pop
     IntStack pile(4);
-    int r =pile.pop();
+    int r =pile.pop();//pile déjà vide
+//terminate called after throwing an instance of 'int'
 }
 
 
