@@ -16,6 +16,7 @@ void test1(){//test du cas normal
     pile.AffichePile();
     bool test = pile.rempli();
     int r=pile.pop();
+    pile.Affichepile();
     std::cout<<test<<std::endl;
     std::cout<<r<<std::endl;
     pile.delete_stack();
