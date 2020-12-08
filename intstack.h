@@ -38,7 +38,7 @@ public:
         for (int i; i< top ;i++){
             std::cout << tab[i];
         }
-        std;;cout<<']'<< std::endl;
+        std::cout<<']'<< std::endl;
     }
         
           
