@@ -22,8 +22,28 @@ void test1(){//test du cas normal
     pile.delete_stack();
 }
 
+void test2(){//test du cas d'erreur pile de hauteur négative ou nulle
+    IntStack Pile(-1);
+}
+
+void test3(){//test du cas d'erreur pile pleine et push
+    IntStack pile(2);
+    pile.push(1);
+    pile.push(2);
+    pile.push(3);
+}
+
+void test4(){//test du cas d'erreur pile vide et pop
+    IntStack pile(4);
+    int r =pile.pop();
+}
+
+
 
 int main(){
     test1();
+    test2();
+    test3();
+    test4();
     return 0;
 }
