@@ -3,7 +3,7 @@ class IntStack{
 public:
     IntStack (int tutu) : hauteur(tutu), top(0){//on initialise top et hauteur
         if (hauteur<=0){
-            std::cout <<"taille nulle";
+            std::cout <<"taille nulle"<<std::endl;
             throw(0);
         }
         else {
@@ -16,7 +16,7 @@ public:
             top = top+1;
         }
         else {
-            std::cout<<"pile pleine";
+            std::cout<<"pile pleine"<<std::endl;
             throw(1);
         }
     }
@@ -29,7 +29,7 @@ public:
             return tab[top];
         }
         else{
-            std::cout<<"pile déjà vide";
+            std::cout<<"pile déjà vide"<<std::endl;
             throw(2);
         }
     }
