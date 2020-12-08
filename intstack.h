@@ -32,6 +32,15 @@ public:
             std::cout<<'pile déjà vide';
             throw(2)
         }
+    void AffichePile(){
+        std::cout<<'[';
+        for (int i; i< top ;i++){
+            std::cout << tab[i];
+        }
+        std;;cout<<']'<< std::endl;
+    }
+        
+          
     
     }
     bool vide(){
