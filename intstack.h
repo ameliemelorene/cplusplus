@@ -45,7 +45,7 @@ public:
     
     }
     bool vide(){
-        return hauteur==0;
+        return top==0;
     }
     void delete_stack(){
         delete [] tab;
