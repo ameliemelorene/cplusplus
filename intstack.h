@@ -26,7 +26,7 @@ public:
     int pop(){
         if (not vide()) {
             top=top-1;
-            return tab[top+1];
+            return tab[top];
         }
         else{
             std::cout<<"pile déjà vide";
