@@ -32,6 +32,7 @@ public:
             std::cout<<'pile déjà vide';
             throw(2)
         }
+    }
     void AffichePile(){
         std::cout<<'[';
         for (int i; i< top ;i++){
