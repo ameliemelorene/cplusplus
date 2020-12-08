@@ -35,8 +35,8 @@ public:
     }
     void AffichePile(){
         std::cout<<'[';
-        for (int i; i< top ;i++){
-            std::cout << tab[i];
+        for (int i=0; i< top ;i++){
+            std::cout << tab[i]<<',';
         }
         std::cout<<']'<< std::endl;
     }
