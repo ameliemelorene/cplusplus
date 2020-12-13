@@ -9,6 +9,7 @@ public:
         else {
             tab = new int [hauteur];}
     }
+    IntStack(const IntStack& rst) : hauteur(
     ~IntStack(){
         delete []tab;
     }
@@ -25,6 +26,12 @@ public:
     }
     bool rempli(){
         return top==hauteur;
+    }
+    int get_hauteur(){
+        return hauteur;
+    }
+    int get_top(){
+        return top;
     }
     int pop(){
         if (not vide()) {
@@ -43,10 +50,7 @@ public:
         }
         std::cout<<']'<< std::endl;
     }
-        
-          
     
-    }
     bool vide(){
         return top==0;
     }
