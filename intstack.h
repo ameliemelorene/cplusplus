@@ -9,6 +9,9 @@ public:
         else {
             tab = new int [hauteur];}
     }
+    IntStack (const IntStack& rst) : hauteur(rst.get_hauteur), top(rst.get_top){
+        tab = new int [hauteur];
+    }
     IntStack(const IntStack& rst) : hauteur(
     ~IntStack(){
         delete []tab;
