@@ -9,6 +9,9 @@ public:
         else {
             tab = new int [hauteur];}
     }
+    ~IntStack(){
+        delete []tab;
+    }
     void push (int e) {
         
         if (not rempli()) {
