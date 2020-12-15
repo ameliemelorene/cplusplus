@@ -9,8 +9,11 @@ public:
         else {
             tab = new int [hauteur];}
     }
-    IntStack (const IntStack& rst) : hauteur(rst.get_hauteur), top(rst.get_top){
+    IntStack (const IntStack& rst) : hauteur(rst.hauteur), top(rst.top){
         tab = new int [hauteur];
+        for(int i=0,i<=top,i++){
+            tab[i]=rst.tab[i];
+        }
     }
     IntStack(const IntStack& rst) : hauteur(
     ~IntStack(){
